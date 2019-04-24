@@ -1,0 +1,7 @@
+HBase,MongoDB,Spark
+đối sánh dư liệu: phát hiện trùng lặp(tiêu đề, tên công ty, thời gian đăng tuyển)
+đối sánh về cấu trúc (các ngành nghề), đối sánh về thuộc tính và đối sánh về dữ liệu (các kí hiệu viết tắt và các con số dạng chữ)
+
+Công việc mới:
+Đưa ra bộ quy tắc chung
+TÌm hiểu các công nghệ xử lí dữ liệu lớn

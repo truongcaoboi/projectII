@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            test
+        </title>
+        <script type="text/javascript" src="test.js"></script>
+        
+
+    </head>
+    <body>
+        <ul>
+            {
+                for $x in doc("data.xml")/bookstore/book/title
+                    order by $x
+                    return <li>{$x}</li>
+            }
+        </ul>
+    </body>
+</html>

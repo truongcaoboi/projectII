@@ -1,0 +1,336 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 3, 2019, 11:29:55 AM
+    Author     : Xuan Truong PC
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Start banner*/
+.banner{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    background: #fff;
+}
+
+.frame{
+    width: inherit;
+    height: inherit;
+}
+
+.btn_left{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0,-40px) rotate(180deg);
+    cursor: pointer;
+    display: none;
+    background-image: url('content/btn_next.png');
+    background-size: 80px 80px;
+}
+
+.btn_right{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translate(0,-40px);
+    cursor: pointer;
+    display: none;
+    background-image: url('content/btn_next.png');
+    background-size: 80px 80px;
+}
+
+.list_banner{
+    width: inherit;
+    height: inherit;
+}
+
+.list_banner li{
+    display: none;
+    width: inherit;
+    height: inherit;
+}
+
+.list_banner li img{
+    width: inherit;
+    height: inherit;
+}
+
+
+/*end banner*/
+
+/*start body*/
+.body{
+    display: flex;
+    justify-content: flex-start;
+    width: 100vw;
+    background-color: black;
+}
+
+.part_left{
+    width: 20vw;
+    background: #fff;
+}
+
+.box_login{
+    pading: 15px;
+    width: inherit;
+    height: 200px;
+    background: #dce567;
+}
+.box_login form{
+    padding: 15px;
+}
+
+.box_login form table{
+    background: #fff;
+}
+
+.box_login form table tr td{
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.box_login form table tr td span{
+    color: red;
+}
+
+.box_login form table tr td input{
+    height: 24px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 2px 4px;
+}
+
+.box_login form table tr td input[type="button"]{
+    font-size: 16px;
+    padding: 2px 4px;
+    height: 24px;
+    width: 120px;
+}
+
+.box_company{
+    width: inherit;
+    height: 500px;
+    background: #678564;
+    padding: 10px;
+}
+
+.box_company div{
+    background: #fff;
+    display: inline-block;
+    width: 340px;
+}
+
+.box_company div div{
+    width: 110px;
+    height: 110px;
+    background-size: 110px 110px;
+}
+
+.part_middle{
+    width: 60vw;
+    background: #222345;
+}
+
+.box_search{
+    width: inherit;
+    height: 160px;
+    background: #00FFCC;
+    padding: 20px;
+}
+
+.box_search div{
+    background: #fff;
+    width: calc(60vw - 38px);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.box_search div input[type="text"]{
+    height: 30px;
+    width: 500px;
+    padding: 4px 7px;
+    font-size: 16px;
+}
+
+.box_search div select{
+    height: 42px;
+    width: 200px;
+    padding: 4px 7px;
+    font-size: 16px;
+}
+
+.box_search div input[type="button"]{
+    height: 42px;
+    width: 150px;
+    padding: 4px 7px;
+    font-size: 16px;
+}
+
+
+.box_job_high_salary{
+    width: inherit;
+    height: 500px;
+    background: #00FFCC;
+    padding: 10px;
+}
+
+.box_job_outofdate{
+    width:inherit;
+    height: 500px;
+    background: #00FFCC;
+    padding: 10px;
+}
+
+.box_job_required{
+    width: inherit;
+    height: 1000px;
+    background: #00FFCC;
+    padding: 10px;
+}
+
+.box_job_high_salary div.listJob,.box_job_required div.listJob,.box_job_outofdate div.listJob{
+    width: calc(60vw - 38px);
+    background: #fff;
+    margin-top: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.box_job_high_salary div.listJob{
+    height: 400px;
+}
+
+.box_job_outofdate div.listJob{
+    height: 400px;
+}
+
+.box_job_required div.listJob{
+    height: 900px;
+}
+
+.job{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.logo_company{
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    background-size: 110px 110px;
+}
+
+.info{
+    width: calc(60vw - 150px);
+    margin-left: 5px;
+}
+
+.detail_job table tr td{
+    width: 500px;
+    height: 24px;
+}
+
+.part_right{
+    width: 20vw;
+    background: #fff;
+}
+
+.box_career{
+    width: inherit;
+    background: #444444;
+    height: 500px;
+    padding: 10px;
+}
+.box_career ul{
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+    background: #fff;
+    width: calc(20vw - 38px);
+}
+
+.box_career ul li{
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 24px;
+    padding: 7px 4px;
+}
+
+.box_career ul li:hover{
+    background: #c3c3c3;
+}
+
+.box_career ul li a,.box_career ul li a:visited{
+    text-decoration: none;
+    color: black;
+}
+/*end body*/
+
+/*start footer*/
+.footer{
+    width: 100vw;
+    height: 300px;
+    background: #666666;
+}
+
+/*end footer*/
+
+.btn_up{
+    width: 80px;
+    height: 80px;
+    background-image: url('content/btn_up.png');
+    background-size: 80px 80px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+}
+
+/*start icon*/
+.icon_address{
+    padding: 8px 16px;
+    background: url('content/location.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+.icon_experience{
+    padding: 8px 16px;
+    background: url('content/suitcase.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+.icon_expire{
+    padding: 8px 16px;
+    background: url('content/hourglass.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+.icon_salary{
+    padding: 8px 16px;
+    background: url('content/salary.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+/*end icon*/
