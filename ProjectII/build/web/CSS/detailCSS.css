@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 3, 2019, 2:56:58 AM
+    Author     : Xuan Truong PC
+*/
+.box_detail_job{
+    width: inherit;
+    height: auto;
+    background: #00FFCC;
+    padding: 20px;
+}
+
+.box_detail_job div.hai{
+    background: #fff;
+    width: calc(60vw - 38px);
+    margin-top: 10px;
+    height: auto;
+}
+td{
+    padding: 10px;
+    align-content: top;
+}
+.cha{
+    padding:0px;
+}

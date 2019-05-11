@@ -21,6 +21,7 @@ import static com.mongodb.client.model.Projections.excludeId;
 import java.util.Vector;
 import org.bson.Document;
 import org.bson.types.ObjectId;
+import filter.Standard;
 
 public class Wrapper {
 
@@ -37,9 +38,13 @@ public class Wrapper {
      */
     public static void main(String args[]) {
         //new Wrapper1().crawlData();
-//        new Wrapper2().crawlData();
-//        new Wrapper3().crawlData();
-        standardlizeData();
+        //new Wrapper2().crawlData();
+        //new Wrapper3().crawlData();
+       // standardlizeData();
+       Standard st = new Standard();
+       st.executeStandardData();
+       st.addDataIntoDatabase();
+       
     }
 
     public static void standardlizeData() {

@@ -7,10 +7,12 @@ package control;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Vector;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.Job;
 
 /**
  *
@@ -32,15 +34,35 @@ public class Search extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet Search</title>");            
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet Search at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
+            Vector<Job> jobs = (Vector<Job>)request.getSession().getAttribute("jobs");
+            String title = java.net.URLDecoder.decode(request.getParameter("title"), "UTF-8");
+            String career = java.net.URLDecoder.decode(request.getParameter("career"), "UTF-8");
+            String district = java.net.URLDecoder.decode(request.getParameter("district"), "UTF-8");
+            
+            Vector<Job> jobSearch = new Vector<Job>();
+            for(Job job:jobs){
+                if(job.getTitleJob().contains(title.toUpperCase())&job.getCareer().contains(career)&job.getAddress().contains(district)){
+                    jobSearch.add(job);
+                }
+            }
+            
+            String responseJob = "[";
+            if(jobSearch.size()==0){
+                responseJob = "[]";
+            }else{
+                int n = 0;
+                if(jobSearch.size()>=20){
+                    n=20;
+                }else{
+                    n = jobSearch.size();
+                }
+                for(int i =0;i<n;i++){
+                    responseJob += jobSearch.get(i).toJsonImportant()+",";
+                }
+                responseJob = responseJob.substring(0, responseJob.length()-1);
+                responseJob +="]";
+            }
+            out.print("{\"jobs\":"+responseJob+"}");
         }
     }
 

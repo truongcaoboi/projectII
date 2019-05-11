@@ -151,6 +151,8 @@ and open the template in the editor.
     padding: 20px;
 }
 
+
+
 .box_search div{
     background: #fff;
     width: calc(60vw - 38px);
@@ -314,7 +316,7 @@ and open the template in the editor.
 }
 .icon_experience{
     padding: 8px 16px;
-    background: url('content/suitcase.png') no-repeat;
+    background: url('content/experience.png') no-repeat;
     background-size: 20px 20px;
     background-position: 5px 5px;
     margin-right: 5px;
@@ -329,6 +331,50 @@ and open the template in the editor.
 .icon_salary{
     padding: 8px 16px;
     background: url('content/salary.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+
+.icon_form{
+    padding: 8px 16px;
+    background: url('content/worker.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+
+.icon_gender{
+    padding: 8px 16px;
+    background: url('content/gender.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+.icon_quantity{
+    padding: 8px 16px;
+    background: url('content/quantity.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+.icon_feature{
+    padding: 8px 16px;
+    background: url('content/feature.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+.icon_degree{
+    padding: 8px 16px;
+    background: url('content/suitcase.png') no-repeat;
+    background-size: 20px 20px;
+    background-position: 5px 5px;
+    margin-right: 5px;
+}
+.icon_career{
+    padding: 8px 16px;
+    background: url('content/career.png') no-repeat;
     background-size: 20px 20px;
     background-position: 5px 5px;
     margin-right: 5px;

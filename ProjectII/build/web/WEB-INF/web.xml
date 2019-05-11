@@ -12,6 +12,14 @@
         <servlet-name>GetDetailJob</servlet-name>
         <servlet-class>control.GetDetailJob</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AutoLoad</servlet-name>
+        <servlet-class>control.AutoLoad</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AutoLoadCompany</servlet-name>
+        <servlet-class>control.AutoLoadCompany</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GetDataFirst</servlet-name>
         <url-pattern>/GetDataFirst</url-pattern>
@@ -24,12 +32,20 @@
         <servlet-name>GetDetailJob</servlet-name>
         <url-pattern>/GetDetailJob</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AutoLoad</servlet-name>
+        <url-pattern>/AutoLoad</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AutoLoadCompany</servlet-name>
+        <url-pattern>/AutoLoadCompany</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 </web-app>

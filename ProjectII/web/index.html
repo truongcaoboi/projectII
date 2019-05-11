@@ -1,0 +1,241 @@
+<!-- 
+    Document   : index
+    Created on : Apr 3, 2019, 11:18:31 AM
+    Author     : Xuan Truong PC
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Trang chủ</title>
+        <link href="CSS/indexCss.css" rel="stylesheet" type="text/css"/>
+        <link rel="shortcut icon" type="image/png" href="CSS/content/favicon.png"/>
+    </head>
+    <body>
+        <div class="banner" id="banner">
+            <div class="frame">
+                <ul class="list_banner">
+                    <li class="item_banner first"><img src="CSS/content/banner1.jpg" alt=""/></li>
+                    <li class="item_banner"><img src="CSS/content/banner2.jpg" alt=""/></li>
+                    <li class="item_banner"><img src="CSS/content/banner3.png" alt=""/></li>
+                    <li class="item_banner"><img src="CSS/content/banner4.jpg" alt=""/></li>
+                    <li class="item_banner"><img src="CSS/content/banner5.png" alt=""/></li>
+                    <li class="item_banner"><img src="CSS/content/banner6.png" alt=""/></li>
+                    <li class="item_banner"><img src="CSS/content/banner7.jpg" alt=""/></li>
+                    <li class="item_banner"><img src="CSS/content/banner9.jpg" alt=""/></li>
+                    <li class="item_banner"><img src="CSS/content/banner10.png" alt=""/></li>
+                    <li class="item_banner last"><img src="CSS/content/banner8.png" alt=""/></li>
+                </ul>
+            </div>
+            <div  class="btn_left"></div>
+            <div class="btn_right"></div>
+        </div>
+        <div class="body">
+            <div class="part_left">
+                <div class="box_login">
+                    <form class="form_login">
+                        <table cellpadding = 5 cellspacing = 5>
+                            <caption><h2>Đăng nhập</h2></caption>
+                            <tr>
+                                <td>Tên đăng nhập <span>(*)</span></td>
+                                <td>
+                                    <input type="text" name="username" maxlength="100" autocomplete="off">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mật khẩu <span>(*)</span></td>
+                                <td>
+                                    <input type="password" name="password" maxlength="20">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align = "center"><input type="button" value="Đăng nhập">&nbsp;<input type="button" value="Đăng ký"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="box_company">
+                    <h2 align="center">Một sô doanh nghiệp</h2>
+                    <div id="companys">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="part_middle">
+                <div class="box_search">
+                    <h2>Tìm kiếm nâng cao</h2>
+                    <div class="search">
+                        <form>
+                            <input type="text" name="title" placeholder="Nội dung tìm kiếm">
+                            <select name="career">
+                                <option value = "">--Chọn ngành nghề--</option>
+                                <option value = "Kinh doanh">Kinh doanh</option>
+                                <option value = "Hành chính - Kế toán">Hành chính - Kế toán</option>
+                                <option value = "Công nghệ thông tin">Công nghệ thông tin</option>
+                                <option value = "Điện/Điện tử">Điện/Điện tử</option>
+                                <option value = "Vận tải">Vận tải</option>
+                                <option value = "Cơ khí">Cơ khí</option>
+                                <option value="Báo chí">Báo chí</option>
+                                <option value = "Sản xuất">Sản xuất</option>
+                                <option value = "An ninh">An ninh</option>
+                                <option value = "Khác">Khác</option>
+                            </select>
+                            <select name="district">
+                                <option value = "">--Chọn quận/huyện--</option>
+                                <option value = "BA ĐÌNH">Ba Đình</option>
+                                <option value = "HOÀN KIẾM">Hoàn Kiếm</option>
+                                <option value = "HAI BÀ TRƯNG">Hai Bà Trưng</option>
+                                <option value = "ĐỐNG ĐA">Đống Đa</option>
+                                <option value = "TÂY HỒ">Tây Hồ</option>
+                                <option value = "CẦU GIẤY">Cầu giấy</option>
+                                <option value = "THANH XUÂN">Thanh Xuân</option>
+                                <option value = "HOÀNG MAI">Hoàng Mai</option>
+                                <option value = "LONG BIÊN">Long Biên</option>
+                                <option value = "TỪ LIÊM">Từ Liêm</option>
+                                <option value = "THANH TRÌ">Thanh Trì</option>
+                                <option value = "GIA LÂM">Gia Lâm</option>
+                                <option value = "ĐÔNG ANH">Đông Anh</option>
+                                <option value = "SÓC SƠN">Sóc Sơn</option>
+                                <option value = "HÀ ĐÔNG">Hà Đông</option>
+                                <option value = "SƠN TÂY">Sơn Tây</option>
+                                <option value = "BA VÌ">Ba Vì</option>
+                                <option value = "PHÚC THỌ">Phúc Thọ</option>
+                                <option value = "THẠCH THẤT">Thạch Thất</option>
+                                <option value = "QUỐC OAI">Quốc Oai</option>
+                                <option value = "CHƯƠNG MỸ">Chương Mỹ</option>
+                                <option value = "ĐAN PHƯỢNG">Đan Phượng</option>
+                                <option value = "HOÀI ĐỨC">Hoài Đức</option>
+                                <option value = "THANH OAI">Thanh Oai</option>
+                                <option value = "MỸ ĐỨC">Mỹ Đức</option>
+                                <option value = "ỨNG HÒA">Ứng Hòa</option>
+                                <option value = "THƯỜNG TÍN">Thường Tín</option>
+                                <option value = "PHÚ XUYÊN">Phú Xuyên</option>
+                                <option value = "MÊ LINH">Mê Linh</option>
+                            </select>
+                            <input type="button" value="Tìm kiếm" id="button_search">
+                        </form>
+                    </div>
+                </div>
+                <div class="box_job_high_salary">
+                    <h2>Việc làm lương cao</h2>
+                    <div class="listJob" id="box_job_high_salary">
+                        <div class="job">
+                            <div class="logo_company" style="background-image: url('<%=ws.getLogo()%>')"></div>
+                            <div class="info">
+                                <div class="info_job">
+                                    <h3>Ten cong viec</h3>
+                                    <h3>Ten cong ty</h3>
+                                </div>
+                                <div class="detail_job">
+                                    <table cellspacing="10">
+                                        <tr>
+                                            <td><span class="icon_address"></span><span>Địa điểm: Hà Nội</span></td>
+                                            <td><span class="icon_experience"></span><span>Kinh nghiệm: co kinh nghiem</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="icon_salary"></span><span>Mức lương: 1000000</span></td>
+                                            <td><span class="icon_expire"></span><span>Hạn nộp: hom nay</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_job_outofdate">
+                    <h2>Việc làm sắp hết hạn</h2>
+                    <div class="listJob" id="box_job_outofdate">
+                        <div class="job">
+                            <div class="logo_company" style="background-image: url('<%=ws.getLogo()%>')"></div>
+                            <div class="info">
+                                <div class="info_job">
+                                    <h3>Tieu de cong viec</h3>
+                                    <h3>Ten cong ty</h3>
+                                </div>
+                                <div class="detail_job">
+                                    <table cellspacing="10">
+                                        <tr>
+                                            <td><span class="icon_address"></span><span>Địa điểm: Hà Nội</span></td>
+                                            <td><span class="icon_experience"></span><span>Kinh nghiệm: 1nam</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="icon_salary"></span><span>Mức lương: 10000000</span></td>
+                                            <td><span class="icon_expire"></span><span>Hạn nộp: hom nay</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box_job_required" >
+                    <h2>Việc làm</h2>
+                    <div class="listJob" id = "box_job_required">
+                        <div class="job">
+                            <div class="logo_company" style="background-image: url('<%=ws.getLogo()%>')"></div>
+                            <div class="info">
+                                <div class="info_job">
+                                    <h3>Tieu de</h3>
+                                    <h3>Tieu de</h3>
+                                </div>
+                                <div class="detail_job">
+                                    <table cellspacing="10">
+                                        <tr>
+                                            <td><span class="icon_address"></span><span>Địa điểm: Hà Nội</span></td>
+                                            <td><span class="icon_experience"></span><span>Kinh nghiệm: 1 namw</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span class="icon_salary"></span><span>Mức lương: 1000000</span></td>
+                                            <td><span class="icon_expire"></span><span>Hạn nộp: hom nay</span></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="part_right">
+                <div class="box_career">
+                    <h2>Ngành nghề</h2>
+                    <ul>
+                        <li><a href="#box_job_required" class="linkCareer" content = "Kinh doanh">Kinh doanh</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "Hành chính - Kế toán">Hành chính - Kế toán</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "Công nghệ thông tin">Công nghệ thông tin</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "Điện/Điện tử">Điện/Điện tử</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "Vận tải">Vận tải</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "Cơ khí">Cơ khí</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "Báo chí">Báo chí</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "Sản xuất">Sản xuất</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "An ninh">An ninh</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "Khác">Khác</a></li>
+                        <li><a href="#box_job_required" class="linkCareer" content = "">Tất cả</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="box_find">
+                <div class="find_province">
+
+                </div>
+                <div class="find_career">
+
+                </div>
+            </div>
+            <div class="contact">
+
+            </div>
+        </div>
+
+        <a class="btn_up" href="#banner">
+
+        </a>
+    </body>
+
+    <script src="Scripts/jquery.js" type="text/javascript"></script>
+    <script src="Scripts/indexJS.js" type="text/javascript"></script>
+    <script src="Scripts/interval.js" type="text/javascript"></script>
+</html>

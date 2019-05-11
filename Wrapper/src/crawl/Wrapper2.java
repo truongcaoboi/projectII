@@ -67,6 +67,7 @@ public class Wrapper2 {
         InputStream inStream = null;
         Document doc = null;
         Work work = new Work();
+        work.setLinkRoot(link);
         try {
             inStream = new URL(link).openStream();
             doc = Jsoup.parse(inStream, "UTF-8", link);
@@ -128,26 +129,26 @@ public class Wrapper2 {
             }
 
             //Kiểm tra lại thông tin thu được
-            System.out.println("Nhan de: " + titleJob);
-            System.out.println("Ten cong ty: " + companyName);
-            System.out.println("Dia chi cong ty: " + companyAddress);
-            System.out.println("Link cong ty: " + companyLink);
-            System.out.println("khu vuc: " + area);
-            System.out.println("Muc luong: " + salary);
-            System.out.println("kinh nghiem: " + experience);
-            System.out.println("trinh do: " + degree);
-            System.out.println("nganh nghe: " + career);
-            System.out.println("so luong: " + quantity);
-            System.out.println("Tinhs chat: " + feature);
-            System.out.println("hinh thuc: " + form);
-            System.out.println("Mo ta: " + description);
-            System.out.println("yeu cau: " + required);
-            System.out.println("Quyen loi: " + interest);
-            System.out.println("nguoi lien he: " + contactName);
-            System.out.println("dia chi lien he: " + contactAddress);
-            System.out.println("Han nop: " + expire);
-            System.out.println("gioi tinh: " + gender);
-            System.out.println("-------------------------------");
+//            System.out.println("Nhan de: " + titleJob);
+//            System.out.println("Ten cong ty: " + companyName);
+//            System.out.println("Dia chi cong ty: " + companyAddress);
+//            System.out.println("Link cong ty: " + companyLink);
+//            System.out.println("khu vuc: " + area);
+//            System.out.println("Muc luong: " + salary);
+//            System.out.println("kinh nghiem: " + experience);
+//            System.out.println("trinh do: " + degree);
+//            System.out.println("nganh nghe: " + career);
+//            System.out.println("so luong: " + quantity);
+//            System.out.println("Tinhs chat: " + feature);
+//            System.out.println("hinh thuc: " + form);
+//            System.out.println("Mo ta: " + description);
+//            System.out.println("yeu cau: " + required);
+//            System.out.println("Quyen loi: " + interest);
+//            System.out.println("nguoi lien he: " + contactName);
+//            System.out.println("dia chi lien he: " + contactAddress);
+//            System.out.println("Han nop: " + expire);
+//            System.out.println("gioi tinh: " + gender);
+//            System.out.println("-------------------------------");
             //Gán giá trị cho đối tượng việc làm
             work.setAddress(companyAddress);
             work.setArea(area);
@@ -216,6 +217,7 @@ public class Wrapper2 {
                     }
                     work = this.getWork(link);
                     if (work != null) {
+                        work.toString(null);
                         mongoColection.insertOne(work.getDocument());
                     } else {
                         continue;

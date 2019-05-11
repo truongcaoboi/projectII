@@ -35,6 +35,17 @@ public class Work {
     private String contactPhone = "";//Số điện thoại liên hệ
     private String contactEmail = "";//Email liên hệ
     private String logo = "";
+    private String linkRoot = "";
+
+    public String getLinkRoot() {
+        return linkRoot;
+    }
+
+    public void setLinkRoot(String linkRoot) {
+        this.linkRoot = linkRoot;
+    }
+    
+    
 
     public String getLogo() {
         return logo;
@@ -311,6 +322,8 @@ public class Work {
         System.out.println("dien thoai lien he: " + contactPhone);
         System.out.println("Han nop: " + expire);
         System.out.println("gioi tinh: " + gender);
+        System.out.println("logo: "+ logo);
+        System.out.println("linkRoot: "+linkRoot);
         System.out.println("------------------------------");
     }
     
@@ -319,7 +332,7 @@ public class Work {
         doc.append("titleJob", titleJob);
         doc.append("companyName", companyName);
         doc.append("companyAddress", address);
-        doc.append("conpanyLink", companyLink);
+        doc.append("companyLink", companyLink);
         doc.append("area", area);
         doc.append("salary", salary);
         doc.append("career", career);
@@ -338,6 +351,7 @@ public class Work {
         doc.append("expire", expire);
         doc.append("gender", gender);
         doc.append("logo", logo);
+        doc.append("linkRoot",linkRoot);
         
         return doc;
     }
